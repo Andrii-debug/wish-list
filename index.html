@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/popupStyle.css">
+    <link rel="stylesheet" href="./css/secondPopUp.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Wish List</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="first-block">
+            <div class="navs">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="info-div">
+                    <input type="image" src="./img/information.png" class="info" data-tooltip="Information">
+                </div>
+            </div>
+
+            <!-- popupTwoInfo -->
+            <div class="popContainer">
+                <div class="popupTextBlock">
+                    <h2 class="HeaderInfo">
+                        About Project
+                        <input type="image" src="./img/cross.png" class="closeSecond-PopUp" data-tooltip="Close" />
+                    </h2>
+                    <h5 class="text_aboutProject">
+                        Glad to congratulate you! This is a project in which you can write down and fulfill your wishes.
+                        Due to the fact that you write down your desires, you are less likely to ignore them in life. In
+                        this way, you achieve your goals in small steps.
+                        Nothing big is done right away. So let's start now.
+                        <p>
+                            <span style="font-weight: bold;">Goal : </span> fulfill 5 wishes in one week.
+                            For each wish fulfilled, you receive 20% of progress.
+                            After completing the progress bar, you can pat yourself on the shoulder <span
+                                class="text-smile" style="font-style: normal">😆</span>.
+                        </p>
+                        Zero the progress and come next week.
+                        Good luck.
+                    </h5>
+                </div>
+            </div>
+
+            <!-- ////////////////////////popUp for Img//////////////////////// -->
+
+            <div class="b-popup">
+
+                <div class="b-popup-content">
+                    <div class="popup-header">
+                        Chose your avatar!
+                        <input type="image" src="./img/cross.png" class="close-popup" data-tooltip="Close" />
+
+                    </div>
+                    <div class="popup-content-images"></div>
+                </div>
+            </div>
+
+
+            <!-- //////////////////////////// menu /////////////////////////// -->
+            <div class="menu">
+                <nav>
+                    <li><a href="#">The wish list is fulfilled</a></li>
+                    <li><a href="#" class="select-avatar">Replace avatar</a></li>
+                    <li><a href="#">Сlear the fun scale</a></li>
+                    <li><a href="#">Help</a></li>
+                </nav>
+            </div>
+
+            <!-- ////////////////////////////////////////////////////////////////// -->
+
+            <h3 class="header">Write your wishes </h3>
+            <div class="inp">
+                <input type="text" class="add" placeholder="Write...">
+
+            </div>
+
+
+            <div class="circl">
+                <svg class="progress-ring" width="120" height="120">
+
+                    <circle class="progress-ring__circle" stroke="white" stroke-width="5" cx="60" cy="60" r="52"
+                        fill="transparent" />
+
+
+                </svg>
+
+
+                <img src="./img/congratulation.png" class="congratulation-img" alt="congratulation Picture">
+
+
+                <p class="persent"></p>
+                <figure class="smile">
+                    <img class="icon" src="./img/angry.png" alt="smile"
+                        data-tooltip="The goal is to complete 5 wishes per week!">
+                </figure>
+            </div>
+
+            <div class="h4">
+                <h4 class="log-header">Fulfilled wishes log
+                </h4>
+
+                <i class="arrow up" data-tooltip="Hide"></i>
+                <i class="arrow down" data-tooltip="Show"></i>
+
+            </div>
+
+            <div class="continue">
+
+            </div>
+        </div>
+
+        <div class="second-block">
+            <figure class="img-avatar">
+                <img src="" class="avatar" alt="photo">
+
+                <div class="block-btnChose-img">
+                    <img class="chose-btns" src="./img/name.png" data-tooltip="Change avatar">
+                    <img class="chose-btns return" src="./img/return (1).png" data-tooltip="Reset the pleasure scale">
+                    <img class="chose-btns change_name" src="./img/id-card.png" data-tooltip="Change name">
+
+                </div>
+
+                <div class="Name">
+
+                </div>
+                <input type="text" class="Enter_name" placeholder="Enter your name...">
+            </figure>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./burger-menu.js"></script>
+    <script src="./chose-avatar.js"></script>
+</body>
+
+</html>

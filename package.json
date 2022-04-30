@@ -1,0 +1,11 @@
+{
+  "name": "wish-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "render.js",
+  "scripts": {
+    "build": "start"
+  },
+  "author": "Andrii Dubovyk",
+  "license": "ISC"
+}
