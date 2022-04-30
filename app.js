@@ -256,7 +256,7 @@ function createNameElement(data = EnterName.value) {
   
   removeNameBtn.setAttribute("type", "image");
   removeNameBtn.className = 'closeName'
-  removeNameBtn.src = "../img/cross.png";
+  removeNameBtn.src = "./img/cross.png";
   d.style.display = "flex";
   d.style.margin = '5px'
   EnterName.style.display = "none";
