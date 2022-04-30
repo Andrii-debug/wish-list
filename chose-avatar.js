@@ -48,7 +48,13 @@ popUpContent.forEach(function SelectAvatar(element) {
 
 window.addEventListener('load', () => {
     let getImageSrc = localStorage.getItem('image-src')
-    figure.src = getImageSrc;
+
+    if (getImageSrc === null) {
+        figure.src = "./img/user.png";
+    } else {
+        figure.src = getImageSrc;
+    }
+    
 })
 
 
